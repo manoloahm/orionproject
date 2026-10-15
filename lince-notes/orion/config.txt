@@ -3,5 +3,5 @@ CATALOGO          = "estrellas_v3"
 RESOLUCION        = "alta"
 MODO_DEMO         = activado
 
-// Por seguridad, el PIN no se guarda en claro: solo su hash MD5
+// Por seguridad, el PIN no se guarda en claro.
 PIN_DESACTIVACION = "da2bd66b01e29045b235112639d02347"
