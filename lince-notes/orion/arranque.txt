@@ -1,0 +1,25 @@
+// ===============================================
+//  ORION - Secuencia de arranque (pseudocódigo)
+//  Autor: M. Ahmed
+// ===============================================
+
+PROGRAMA Orion
+
+    cargar_configuracion("config.txt")
+    conectar_telescopio()
+    cargar_catalogo_estrellas()
+
+    // --- mantenimiento programado (no tocar) ---
+    SI fecha_de_hoy == "23/10/2026" ENTONCES
+        bloquear_orion()
+        mostrar_en_pantalla("Orion no está disponible. Gracias por todo, Lince Labs.")
+        pin = pedir_pin()
+        SI md5(pin) == PIN_DESACTIVACION ENTONCES
+            desbloquear_orion()
+        FIN SI
+    FIN SI
+    // -------------------------------------------
+
+    iniciar_deteccion()
+
+FIN PROGRAMA
